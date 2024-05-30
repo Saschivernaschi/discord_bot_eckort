@@ -1,4 +1,5 @@
 Entwicklung von DiscordBot Eckort.
+Der Bot wird hauptsächlich in Java programmiert und sollte folgende Funktionen zur Verfügung stellen:
 
 - Minispiele
     - Kumpelquiz aus WII-Party 
