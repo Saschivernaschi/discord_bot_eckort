@@ -1,6 +1,4 @@
 Entwicklung von DiscordBot Eckort.
-Der Bot wird hauptsächlich in Java programmiert und soll folgende Funktionen zur Verfügung stellen:
-
 
 - Minispiele
     - Kumpelquiz aus WII-Party 
@@ -20,3 +18,4 @@ Der Bot wird hauptsächlich in Java programmiert und soll folgende Funktionen zu
     - Disskusionsthemen
     - AI einbauen
 - Feedback-System: Erlaube Benutzern, anonymes oder offenes Feedback zu geben, um den Server oder den Bot zu verbessern.
+- Steuerung für den vrisingserver
