@@ -10,7 +10,7 @@ import org.discord.bot.eckort.listener.commands.PingPongCommand;
 
 public class Main {
     private static final String APIKEY = System.getenv("DC_Eckort_Token");
-    public static final String PREFIX = "/E";
+    public static final String PREFIX = "/E ";
 
     public static void main(String[] args) {
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(APIKEY);
