@@ -6,7 +6,6 @@ import net.dv8tion.jda.api.sharding.DefaultShardManagerBuilder;
 import net.dv8tion.jda.api.sharding.ShardManager;
 import org.discord.bot.eckort.commandMangement.CommandListener;
 import org.discord.bot.eckort.commandMangement.CommandManager;
-import org.discord.bot.eckort.commandMangement.commands.PingPongCommand;
 
 public class Main {
     private static final String APIKEY = System.getenv("DC_Eckort_Token");
@@ -18,7 +17,7 @@ public class Main {
         builder.enableIntents(GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_MESSAGES, GatewayIntent.DIRECT_MESSAGE_REACTIONS);
 
         builder.addEventListeners(new CommandListener());
-        CommandManager.getInstance().addCommand("Ping", new PingPongCommand());
+        CommandManager.addAllCommands();
         //start bot
         ShardManager shardManager = builder.build();
     }

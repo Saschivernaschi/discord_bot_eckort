@@ -6,6 +6,7 @@ import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import org.discord.bot.eckort.commandMangement.commands.CommandInterface;
+import org.discord.bot.eckort.commandMangement.commands.PingPongCommand;
 
 import java.util.HashMap;
 
@@ -27,7 +28,7 @@ public class CommandManager {
         }
     }
 
-    public void addCommand(String command, CommandInterface commandObject) throws IllegalStateException{
+    private void addCommand(String command, CommandInterface commandObject) throws IllegalStateException{
         if(commandMap.containsKey(command)) throw new IllegalStateException("command kann nicht hingefügt werden.");
         commandMap.put(command, commandObject);
     }
@@ -40,5 +41,9 @@ public class CommandManager {
 
     protected static String[] getArguments(Message message){
         return message.getContentDisplay().substring(Main.PREFIX.length()).split(" "); //TODO: fix message split (currently command looks like: "/EPing" instead of "/E Ping")
+    }
+
+    public static void addAllCommands(){
+        CommandManager.getInstance().addCommand("Ping", new PingPongCommand());
     }
 }
