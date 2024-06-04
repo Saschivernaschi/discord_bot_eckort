@@ -1,4 +1,4 @@
-package org.discord.bot.eckort.listener.commands;
+package org.discord.bot.eckort.commandMangement.commands;
 
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;

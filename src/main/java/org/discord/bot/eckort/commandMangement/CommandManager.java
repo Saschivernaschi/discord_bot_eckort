@@ -1,11 +1,11 @@
-package org.discord.bot.eckort.listener;
+package org.discord.bot.eckort.commandMangement;
 
 import org.discord.bot.eckort.Main;
 
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
-import org.discord.bot.eckort.listener.commands.CommandInterface;
+import org.discord.bot.eckort.commandMangement.commands.CommandInterface;
 
 import java.util.HashMap;
 

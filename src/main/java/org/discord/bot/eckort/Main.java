@@ -4,9 +4,9 @@ import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.sharding.DefaultShardManagerBuilder;
 import net.dv8tion.jda.api.sharding.ShardManager;
-import org.discord.bot.eckort.listener.CommandListener;
-import org.discord.bot.eckort.listener.CommandManager;
-import org.discord.bot.eckort.listener.commands.PingPongCommand;
+import org.discord.bot.eckort.commandMangement.CommandListener;
+import org.discord.bot.eckort.commandMangement.CommandManager;
+import org.discord.bot.eckort.commandMangement.commands.PingPongCommand;
 
 public class Main {
     private static final String APIKEY = System.getenv("DC_Eckort_Token");

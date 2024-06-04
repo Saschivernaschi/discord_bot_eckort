@@ -1,4 +1,4 @@
-package org.discord.bot.eckort.listener;
+package org.discord.bot.eckort.commandMangement;
 
 import net.dv8tion.jda.api.entities.channel.ChannelType;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
