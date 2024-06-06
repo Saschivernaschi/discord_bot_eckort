@@ -3,9 +3,7 @@ package org.discord.bot.eckort.commandMangement.commands;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
-import net.dv8tion.jda.api.entities.channel.concrete.VoiceChannel;
-import net.dv8tion.jda.api.interactions.commands.Command;
-import org.discord.bot.eckort.textToSpeech.textToSpeechHandler;
+import org.discord.bot.eckort.voicehandling.textToSpeech.textToSpeechHandler;
 
 public class TextToSpeech implements CommandInterface {
     @Override
