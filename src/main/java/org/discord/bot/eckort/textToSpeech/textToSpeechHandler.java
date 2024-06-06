@@ -16,8 +16,8 @@ public class textToSpeechHandler{
     }
     private static void performAudioConnection(Member member) throws NullPointerException{
         Guild guild = member.getGuild();
-        AudioChannelUnion voiceChannel = Objects.requireNonNull(member.getVoiceState().getChannel());
-        if (voiceChannel.getMembers().contains(member)){
+        AudioChannelUnion voiceChannel = Objects.requireNonNull(member.getVoiceState()).getChannel();
+        if (voiceChannel != null){
             AudioManager audioManager = guild.getAudioManager();
             audioManager.openAudioConnection(voiceChannel);
         } else {
