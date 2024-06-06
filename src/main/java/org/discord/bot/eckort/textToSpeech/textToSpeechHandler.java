@@ -14,14 +14,15 @@ public class textToSpeechHandler{
         performAudioConnection(member);
 
     }
-    private static void performAudioConnection(Member member) throws NullPointerException{
+    private static AudioManager performAudioConnection(Member member) throws NullPointerException{
         Guild guild = member.getGuild();
         AudioChannelUnion voiceChannel = Objects.requireNonNull(member.getVoiceState()).getChannel();
         if (voiceChannel != null){
             AudioManager audioManager = guild.getAudioManager();
             audioManager.openAudioConnection(voiceChannel);
+            return audioManager;
         } else {
-            throw new NullPointerException();
+            throw new NullPointerException("get AudioConnection failed");
         }
     }
 }
