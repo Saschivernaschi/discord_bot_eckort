@@ -7,6 +7,7 @@ import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import org.discord.bot.eckort.commandMangement.commands.CommandInterface;
 import org.discord.bot.eckort.commandMangement.commands.PingPongCommand;
+import org.discord.bot.eckort.commandMangement.commands.TextToSpeechCommand;
 
 import java.util.HashMap;
 
@@ -45,5 +46,6 @@ public class CommandManager {
 
     public static void addAllCommands(){
         CommandManager.getInstance().addCommand("Ping", new PingPongCommand());
+        CommandManager.getInstance().addCommand("TextToSpeech", new TextToSpeechCommand());
     }
 }
