@@ -6,6 +6,8 @@ import net.dv8tion.jda.api.sharding.DefaultShardManagerBuilder;
 import net.dv8tion.jda.api.sharding.ShardManager;
 import org.discord.bot.eckort.commandMangement.CommandListener;
 import org.discord.bot.eckort.commandMangement.CommandManager;
+import org.discord.bot.eckort.h2.databaseManager;
+
 
 public class Main {
     private static final String APIKEY = System.getenv("DC_Eckort_Token");
@@ -18,7 +20,13 @@ public class Main {
 
         builder.addEventListeners(new CommandListener());
         CommandManager.addAllCommands();
+
+        databaseManager manager = new databaseManager();
+
         //start bot
-        ShardManager shardManager = builder.build();
+
+        //ShardManager shardManager = builder.build();
+
+        while (true);
     }
 }
