@@ -28,7 +28,11 @@ public class TextToSpeechBot {
                 voice = voiceManager.getVoice("Kevin");
             }
             // set voice speed rate
-            voice.setRate(rate);
+            if (!Float.isInfinite(rate)){
+                voice.setRate(rate);
+            } else {
+                voice.setRate(1);
+            }
 
             // Text ausgeben
             tts.textToSpeech(this.text);
