@@ -6,13 +6,14 @@ import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.entities.channel.unions.AudioChannelUnion;
 import net.dv8tion.jda.api.managers.AudioManager;
+import org.discord.bot.eckort.commandMangement.commands.TextToSpeechCommand;
 
 import java.util.Objects;
 
 public class textToSpeechHandler{
     public static void runHandler (Member member, TextChannel channel, Message message) throws NullPointerException{
         performAudioConnection(member);
-
+        //TextToSpeechBot textToSpeechBot = new TextToSpeechBot();
     }
     private static AudioManager performAudioConnection(Member member) throws NullPointerException{
         Guild guild = member.getGuild();
