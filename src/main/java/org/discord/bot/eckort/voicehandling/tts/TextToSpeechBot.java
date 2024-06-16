@@ -1,4 +1,4 @@
-package org.discord.bot.eckort.voicehandling.textToSpeech;
+package org.discord.bot.eckort.voicehandling.tts;
 
 
 import com.sun.speech.freetts.FreeTTS;

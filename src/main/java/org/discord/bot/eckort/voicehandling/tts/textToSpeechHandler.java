@@ -1,4 +1,4 @@
-package org.discord.bot.eckort.voicehandling.textToSpeech;
+package org.discord.bot.eckort.voicehandling.tts;
 
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Member;
@@ -6,7 +6,6 @@ import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.entities.channel.unions.AudioChannelUnion;
 import net.dv8tion.jda.api.managers.AudioManager;
-import org.discord.bot.eckort.commandMangement.commands.TextToSpeechCommand;
 
 import java.util.Objects;
 
