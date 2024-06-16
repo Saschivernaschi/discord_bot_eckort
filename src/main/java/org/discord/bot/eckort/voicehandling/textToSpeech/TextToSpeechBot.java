@@ -1,10 +1,11 @@
 package org.discord.bot.eckort.voicehandling.textToSpeech;
 
-
 import com.sun.speech.freetts.FreeTTS;
 import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
+
+//Todo: leerer Konstruktor ohne Parameter setzt default Werte (Konstante einfügen)
 public class TextToSpeechBot {
     private String voice;
     private float rate;
