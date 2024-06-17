@@ -5,15 +5,19 @@ import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
 
-//Todo: leerer Konstruktor ohne Parameter setzt default Werte (Konstante einfügen)
 public class TextToSpeechBot {
-    private String voice;
-    private float rate;
-    private String text;
+    private final String voiceString;
+    private final float rate;
+    private final String text;
 
     public TextToSpeechBot(String voice, float rate, String text) {
-        this.voice = voice;
+        this.voiceString = voice;
         this.rate = rate;
+        this.text = text;
+    }
+    public TextToSpeechBot(String text) {
+        this.voiceString = "Kevin";
+        this.rate = 1;
         this.text = text;
     }
     public void speak() {
@@ -23,17 +27,11 @@ public class TextToSpeechBot {
 
             // VoiceManager to get voice
             VoiceManager voiceManager = VoiceManager.getInstance();
-            Voice voice = voiceManager.getVoice(this.voice);
+            Voice voice = voiceManager.getVoice(this.voiceString);
+            voice = voiceManager.getVoice(voiceString);
 
-            if (voice == null) {
-                voice = voiceManager.getVoice("Kevin");
-            }
             // set voice speed rate
-            if (!Float.isInfinite(rate)){
-                voice.setRate(rate);
-            } else {
-                voice.setRate(1);
-            }
+            voice.setRate(rate);
 
             // Text ausgeben
             tts.textToSpeech(this.text);
