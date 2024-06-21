@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class trueTest {
 
     @Test
-    void Idempotence(){
+    public void Idempotence(){
         assertEquals(true, true);
     }
 }
