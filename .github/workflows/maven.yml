@@ -41,7 +41,7 @@ jobs:
         git --version
 
     - name: Build with Maven
-      run: mvn clean verify -B --file pom.xml
+      run: mvn --batch-mode clean verify
 
     - name: Publish Test Report
       uses: scacap/action-surefire-report@v1
