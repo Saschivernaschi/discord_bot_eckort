@@ -39,6 +39,7 @@ jobs:
         java -version
         javac --version
         git --version
+        mvn --version
 
     - name: Build and Verify (Run Tests) with Maven
       run: mvn --batch-mode clean verify
