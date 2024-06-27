@@ -40,7 +40,7 @@ public class CommandManager {
         return false;
     }
 
-    protected static String[] getArguments(Message message){
+    public static String[] getArguments(Message message){
         return message.getContentDisplay().substring(Main.PREFIX.length()).split(" "); //TODO: fix message split (currently command looks like: "/EPing" instead of "/E Ping")
     }
 
